@@ -15,5 +15,28 @@ The following are provisioned:
 - Sonar (SonarQube Server)
 - Sonar Runner (Sonar Analyser)
 - Nexus
+- GitList
 
 All running within a centOS VM.
+
+
+### Detailed Information
+
+| Tool   | Description                                            |
+|:-------|:-------------------------------------------------------|
+| Java 8 | Programming Language                                   |
+| Git    | SCM (Source Code Management System)/ VCS (Version Control System) |
+| Maven  | Build Tool (Project Management Tool)                   |
+| Jenkins | Continous Integration (CI) Server                     |
+| Sonar    | Code Quality Analysis Toolkit                        |
+| Nexus    | Artefacts Repository Manager                         |
+| GitList   | Open Source Git Repository Viewer (built in PHP)    |
+| MySQL    | Relational Database                                  |
+| Apache   | Http Web Server                                      |
+| NGINX    | Web Server/Reverse Proxy                             |
+
+
+
+
+
+
