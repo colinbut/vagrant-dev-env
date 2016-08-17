@@ -38,10 +38,12 @@ All running within a centOS VM.
 
 ### Using
 
+192.168.23.10 is the IP of the VM
+
 ```
 vagrant up
 ```
-
+ssh into it
 ```
 vagrant ssh
 ```
@@ -83,7 +85,7 @@ will tell you where Git has been installed to
 
 Jenkins 2 is installed
 
-Open your browser locally and navigate to http://localhost:6060/
+Open your browser locally and navigate to http://192.168.23.10:6060/
 
 which will direct you to the Jenkins getting started configuration wizard on startup. Here you can select which jenkins plugins you want 
 and configure it the way you want to use Jenkins. Then just use Jenkins as you normally would do:
@@ -109,7 +111,7 @@ sudo /opt/sonar/bin/linux-x86-64/sonar.sh console
 Terminal output console will display whether Sonar was successfully started or not.
 Once started, you can browse to
 
-http://localhost:9000
+http://192.168.23.10:9000
 
 in order to access Sonar admin web user interface which from there you can configure and setup projects to be analysed.
 
@@ -119,7 +121,7 @@ By default, it uses an embedded database for storage. This is 'Ok' i feel for de
 
 default login credentials:
 
-Username: admin
+Username: admin  
 Password: admin
 
 #### Sonar Runner
@@ -141,6 +143,31 @@ e.g.
 #### Nexus
 [TBD]
 
+#### GitList
+
+There is additional first time configuration that is required.
+
+Assuming you already have all your Git projects under /var/www/projects/ (checkout your projects into their).
+
+1. Need to change /var/www/html's AllowOverride from None to All in the default Apache website config file
+   (modify the /etc/httpd/conf/httpd.conf file)
+2. Restart Apache
+   (sudo apachectl restart)
+3. reboot VM
+    ```
+    vagrant halt
+    ```
+    then
+    ```
+    vagrant up
+    ```
+    again
+    
+After restarting...
+
+navigate to http://192.168.23.10/gitlist/
+
+and you should list of your Git projects
 
 
 
