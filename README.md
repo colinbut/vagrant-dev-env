@@ -36,6 +36,117 @@ All running within a centOS VM.
 | NGINX    | Web Server/Reverse Proxy                             |
 
 
+### Using
+
+```
+vagrant up
+```
+
+```
+vagrant ssh
+```
+it might be necessary to switch to root user
+
+```
+sudo su -
+```
+
+#### Java
+
+Checking the version of Java installed simply do:
+
+```
+java --version
+```
+
+#### Maven
+
+To check for the maven install simply do
+
+```
+which mvn
+```
+
+which will tell you where the binaries executable are
+
+just use maven as you would normally
+
+#### Git
+
+```
+which git
+```
+
+will tell you where Git has been installed to
+
+#### Jenkins
+
+Jenkins 2 is installed
+
+Open your browser locally and navigate to http://localhost:6060/
+
+which will direct you to the Jenkins getting started configuration wizard on startup. Here you can select which jenkins plugins you want 
+and configure it the way you want to use Jenkins. Then just use Jenkins as you normally would do:
+
+- set up build jobs etc...
+
+#### Sonar (SonarQube Server)
+
+It should already be started. If not run the following command:
+
+```
+sudo /opt/sonar/bin/linux-x86-64/sonar.sh start
+```
+
+this will start up the Sonar server.
+
+Alternatively,
+
+```
+sudo /opt/sonar/bin/linux-x86-64/sonar.sh console
+```
+
+Terminal output console will display whether Sonar was successfully started or not.
+Once started, you can browse to
+
+http://localhost:9000
+
+in order to access Sonar admin web user interface which from there you can configure and setup projects to be analysed.
+
+Please consult the Sonar official documentation on how to use this.
+
+By default, it uses an embedded database for storage. This is 'Ok' i feel for development purposes. Unless, you need more storage, advise you to configure an actual Database for storage. There are many web articles out there on how to do that.
+
+default login credentials:
+
+Username: admin
+Password: admin
+
+#### Sonar Runner
+
+There are a number of different ways in which you can analyse your projects using Sonar. One option is to let Maven the build tool run the analyse as part of its build process which you can easily set up by hooking up the maven-sonar-plugin.
+
+Another option is to manually run the analyse of your projects using the Sonar Runner.
+
+To do this, place a sonar-properties file on the root of your project directory.
+
+Then just run the Sonar Runner:
+
+e.g.
+
+```
+/opt/sonar-runner/
+```
+
+#### Nexus
+[TBD]
+
+
+
+
+
+
+
 
 
 
