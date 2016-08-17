@@ -151,8 +151,10 @@ Assuming you already have all your Git projects under /var/www/projects/ (checko
 
 1. Need to change /var/www/html's AllowOverride from None to All in the default Apache website config file
    (modify the /etc/httpd/conf/httpd.conf file)
-2. Restart Apache
-   (sudo apachectl restart)
+2. Restart Apache   
+   ```
+   sudo apachectl restart  
+   ```   
 3. reboot VM   
     ```
     vagrant halt
