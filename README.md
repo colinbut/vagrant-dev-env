@@ -172,6 +172,20 @@ navigate to http://192.168.23.10/gitlist/
 and you should list of your Git projects
 
 
+#### MySQL
+
+This is an opinionated take on a development environment. With the assumption of your project using a MySQL database it is up to you on how to use it. So you can configure this Database as you will just like you normally do as per your project needs.
+
+#### Tomcat
+
+This is an opinionated take on a development environment. Tomcat 7. Not the latest version of Tomcat. Is is with the assumption that your project uses Apache Tomcat the open source Web (Servlet) Container. Most projects are web applications and runs on this Servlet container. It is there if you need it. However, it is not common for projects to use an embedded tomcat from maven-tomcat7-plugin.
+
+#### Apache
+This is an opinionated take on a development environment. Apache Http Web Server is provided if you ever really need it. However, it is to note that GitList the Git Repository Viewer runs on Apache so this is needed.
+
+
+#### NGINX
+This is an opinionated take on a development environment. NGINX is a very modern popular web server which commonly used as a load balancer or reverse forward proxying. Either way, this is there if you require it and up to you how you use it.
 
 
 
