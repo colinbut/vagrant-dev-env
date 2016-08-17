@@ -147,21 +147,21 @@ e.g.
 
 There is additional first time configuration that is required.
 
-Assuming you already have all your Git projects under /var/www/projects/ (checkout your projects into their).
+Assuming you already have all your Git projects under /var/www/projects/ (checkout your projects into there).
 
 1. Need to change /var/www/html's AllowOverride from None to All in the default Apache website config file
    (modify the /etc/httpd/conf/httpd.conf file)
 2. Restart Apache
    (sudo apachectl restart)
-3. reboot VM
+3. reboot VM   
     ```
     vagrant halt
-    ```
-    then
+    ```  
+    then   
     ```
     vagrant up
-    ```
-    again
+    ```   
+    again   
     
 After restarting...
 
