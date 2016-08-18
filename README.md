@@ -117,7 +117,7 @@ in order to access Sonar admin web user interface which from there you can confi
 
 Please consult the Sonar official documentation on how to use this.
 
-By default, it uses an embedded database for storage. This is 'Ok' i feel for development purposes. Unless, you need more storage, advise you to configure an actual Database for storage. There are many web articles out there on how to do that.
+By default, it uses an embedded database for storage. This is 'OK' i feel for development purposes. Unless, you need more storage, advise you to configure an actual Database for storage. There are many web articles out there on how to do that.
 
 default login credentials:
 
