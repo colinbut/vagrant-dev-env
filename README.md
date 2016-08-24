@@ -141,7 +141,14 @@ e.g.
 ```
 
 #### Nexus
-[TBD]
+Nexus is your repository manager that allows you to store your project artifacts. This is a place where you can upload, download, and browse all your project artifacts in one place via a web user interface. 
+
+Simply navigate to:
+
+http://192.168.23.10:8081/nexus/#welcome
+
+Note, you might need to do some minor configuration upon first use, just consult online Nexus user guide/reference manual for more information. But most of the time, probably just configure your maven build to upload your built and packaged artifacts to nexus. 
+Check maven user manual for more information on this.
 
 #### GitList
 
