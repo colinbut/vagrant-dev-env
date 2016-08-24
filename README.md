@@ -36,9 +36,11 @@ All running within a centOS VM.
 | NGINX    | Web Server/Reverse Proxy                             |
 
 
-### Using
+### Usage
 
 192.168.23.10 is the IP of the VM
+
+If you don't like th IP you can change this, just edit it in the `Vagrantfile`
 
 ```
 vagrant up
