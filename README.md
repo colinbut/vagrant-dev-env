@@ -40,7 +40,7 @@ All running within a centOS VM.
 
 192.168.23.10 is the IP of the VM
 
-If you don't like th IP you can change this, just edit it in the `Vagrantfile`
+If you don't like the IP you can change this, just edit it in the `Vagrantfile`
 
 ```
 vagrant up
